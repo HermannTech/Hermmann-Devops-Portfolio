@@ -1,121 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nze Hermmann Njuafac | DevOps Engineer | Cloud Engineer| Infrastructure Engineer</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f0f0f;
-            color: #ffffff;
-        }
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: #151515;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.1rem;
-            color: #bbbbbb;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            border-left: 5px solid #00c2ff;
-            padding-left: 10px;
-        }
-        .project {
-            background: #1b1b1b;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            border: 1px solid #2b2b2b;
-        }
-        .project h3 {
-            margin: 0;
-            color: #00c2ff;
-        }
-        .contact a {
-            color: #00c2ff;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-    <h1>Nze Hermmann Njuafac</h1>
-    <p>AI-Powered DevOps & Cloud Engineer | AWS | Azure | Kubernetes (CKA) | AIOps | Docker | Terraform | MLOps | CI/CD | IaC | Linux Systems Administrator| Automation | </p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>I am an AI-powered DevOps and Cloud Engineer with 3+ years of hands-on experience designing, automating, and managing IaaS, PaaS, SaaS, and hybrid/on-prem infrastructures. I specialize in leveraging AI, DevOps, AIOps, and cloud automation to improve system reliability, accelerate deployments, and optimize infrastructure performance across AWS, Azure, and GCP.
-
-My experience DevOps Engineering, Cloud Engineering, Platform Engineering, and Systems Engineering, where I’ve built, monitored, secured, and automated scalable environments using modern tools and AI-enhanced workflows. I’m skilled in CI/CD, Kubernetes (CKA), Docker, Terraform, Linux systems, observability, security, Infrastructure as Code, and MLOps practices.
-
-I bring a strong focus on automation, high availability, monitoring, incident reduction, and continuous improvement, using tools like Prometheus, Grafana, CloudWatch, Splunk, Nagios, Azure DevOps, and Git-based workflows. I work effectively across cloud, DevOps, and operations teams to deliver resilient infrastructure and measurable business impact.
-
-I am UAE-based and open to opportunities locally and globally, with a commitment to continuous learning, adaptability, and contributing meaningfully to every organization I join.</p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>1. CI/CD Pipeline with GitHub Actions & Maven</h3>
-        <p>Automated build pipeline using GitHub Actions. Includes unit tests, artifacts, and workflow automation.</p>
-        <p><a href="#">GitHub Repo</a> | <a href="#">Video Demo</a></p>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Your Name</a>
+      <nav class="nav">
+        <button id="theme-toggle" aria-label="Toggle theme">Toggle theme</button>
+        <button id="menu-toggle" aria-label="Open menu">Menu</button>
+      </nav>
     </div>
+  </header>
 
-    <div class="project">
-        <h3>2. SonarQube Code Quality Integration</h3>
-        <p>CI pipeline integrated with SonarQube for static code analysis and security scanning.</p>
-        <p><a href="#">GitHub Repo</a> | <a href="#">Video Demo</a></p>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I’m <span class="accent">Your Name</span></h1>
+        <p class="lead">AI Enthusiast • DevOps • Web Developer — I build useful, maintainable apps and delightful UIs.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+        <p class="hint">(hint: press a key)</p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <!-- Repeat project cards; replace images & text with your content -->
+        <article class="card" data-title="AI Dockerfile Optimizer" data-desc="A tool to improve Dockerfiles with AI.">
+          <div class="card-img" style="background-image:url('assets/project1.jpg')"></div>
+          <h3>AI Dockerfile Optimizer</h3>
+          <p class="meta">AI & DevOps</p>
+        </article>
+
+        <article class="card" data-title="FinanceMe: Capstone" data-desc="DevOps pipeline & infra for a fintech app.">
+          <div class="card-img" style="background-image:url('assets/project2.jpg')"></div>
+          <h3>FinanceMe: Complete DevOps Capstone Project</h3>
+          <p class="meta">DevOps in Banking</p>
+        </article>
+
+        <article class="card" data-title="Smart Parking Assistant" data-desc="IoT solution for smart parking.">
+          <div class="card-img" style="background-image:url('assets/project3.jpg')"></div>
+          <h3>Smart Parking Assistant</h3>
+          <p class="meta">IoT</p>
+        </article>
+
+        <article class="card" data-title="Smart Job Tracker" data-desc="Full-stack job tracking app.">
+          <div class="card-img" style="background-image:url('assets/project4.jpg')"></div>
+          <h3>Smart Job Tracker</h3>
+          <p class="meta">Full stack</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Let's work together</h2>
+
+      <div class="contact-wrap">
+        <form id="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+          <label>
+            Full name
+            <input name="name" type="text" required />
+          </label>
+
+          <label>
+            Email address
+            <input name="email" type="email" required />
+          </label>
+
+          <label>
+            Your message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <p class="privacy">I'll never share your data with anyone else. Pinky promise!</p>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple modal for project details -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
     </div>
+  </div>
 
-    <div class="project">
-        <h3>3. Docker Build Pipeline + Deployment</h3>
-        <p>Automated Docker image build and deployment pipeline integrated with Docker Hub and cloud hosting.</p>
-        <p><a href="#">GitHub Repo</a> | <a href="#">Video Demo</a></p>
-    </div>
-
-    <div class="project">
-        <h3>4. Kubernetes Deployment Demo</h3>
-        <p>A complete deployment demo using Kubernetes manifests, services, and ingress configuration.</p>
-        <p><a href="#">GitHub Repo</a> | <a href="#">Video Demo</a></p>
-    </div>
-
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <p>Docker · Kubernetes · AWS · Jenkins · GitHub Actions · Linux · CI/CD · Terraform · SonarQube · Nexus · Bash · Git</p>
-</section>
-
-<section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hermanntech978@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">https://www.linkedin.com/in/hermmann-njuafac-nze-a096a0388/</a></p>
-</section>
-
-<footer>
-    © 2025 — Built by Nze Hermmann Njuafac
-</footer>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
